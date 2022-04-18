@@ -18,8 +18,9 @@ namespace Tests
             this.TestObject.Log.LogMessage("Start Test");
             Assert.IsTrue(true, "True is Not True");
         }
+        
         /// <summary>
-        /// Sample test
+        /// Extra credit test
         /// </summary>
         [TestMethod]
         public void ExtraCredit()
@@ -31,4 +32,21 @@ namespace Tests
             Assert.IsTrue(sum, "1+1=/=2");
         }        
     }
+
+    /// <summary>
+    /// Extra credit test class with VS unit
+    /// </summary>
+    [TestClass]
+    public class ExtraExtraCredit : BaseTest
+    {
+        /// <summary>
+        /// Sample test
+        /// </summary>
+        [TestMethod]
+        public void SampleTest()
+        {
+            this.TestObject.Log.LogMessage("Start Test");
+            Assert.IsTrue(true, "True is Not True");
+        }
+    }  
 }
